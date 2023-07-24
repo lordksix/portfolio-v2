@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -21,6 +23,10 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
         '3xl': '1536px',
       },
+      fontFamily: {
+				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+				display: ["var(--font-calsans)"],
+			},
       animation: {
         "fade-in": "fade-in 3s ease-in-out forwards",
 				title: "title 3s ease-out forwards",
