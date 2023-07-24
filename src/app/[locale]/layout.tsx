@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   const locale = useLocale();
   if (params.locale !== locale) {
-    redirect('/en');
+    redirect('/');
   }
   return (
     <html lang={locale}>
