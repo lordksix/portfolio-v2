@@ -9,12 +9,7 @@ const nextConfig = {
       },
       {
         source: "/home",
-        destination: "/en",
-        permanent: false,
-      },
-      {
-        source: "/",
-        destination: "/en",
+        destination: "/",
         permanent: false,
       },
     ];

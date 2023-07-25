@@ -1,11 +1,11 @@
 import '../globals.css';
 import type { Metadata } from 'next';
 import {useLocale} from 'next-intl';
-import { Inter } from 'next/font/google';
+
 import React from 'react';
 import { redirect } from 'next/navigation';
-
-const inter = Inter({ subsets: ['latin'] })
+import { calSans, inter } from '../fonts';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,7 +24,12 @@ export default function RootLayout({
   }
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <head>
+        <Analytics />
+      </head>
+      <body className={`dark:bg-black text-sky-900 min-h-screen w-screen dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
+        {children}
+      </body>
     </html>
   );
 }

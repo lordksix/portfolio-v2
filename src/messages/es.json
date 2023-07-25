@@ -1,5 +1,18 @@
 {
   "Home": {
-    "title": "Hola mundo!"
+    "welcome": "Bienvenido",
+    "title": "Soy Wladimir Pasquel",
+    "subtitle": "también conocido como",
+    "descrip1": "Soy un desarrolador de programas! Yo puedo ayudar a construir tu próximo producto, característica o aplicación web. Explora algunos de mis trabajos y proyectos!",
+    "descrip2": "Si te gusta lo que vez y tienes algún projecto que necesitas ser creado, no dudes en contactarme.",
+    "conect": "Connectemos"
+  },
+  "Navbar": {
+    "about": "Acerca",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "Common": {
+    "language": "ES"
   }
 }
