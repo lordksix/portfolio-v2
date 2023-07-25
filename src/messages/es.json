@@ -11,5 +11,8 @@
     "about": "Acerca",
     "projects": "Proyectos",
     "contact": "Contacto"
+  },
+  "Common": {
+    "language": "ES"
   }
 }
