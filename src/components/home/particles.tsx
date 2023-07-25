@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { useMousePosition } from "@/util/mouse";
-import useBrowerTheme from "@/lib/hooks/use-browser-theme";
+import useBrowserTheme from "@/lib/hooks/use-browser-theme";
 
 interface ParticlesProps {
 	className?: string;
@@ -27,7 +27,7 @@ export default function Particles({
 	const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 	const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
 	const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
-  const { isDarkTheme } = useBrowerTheme();
+  const { isDarkTheme } = useBrowserTheme();
 
   let rgbCircle: string;
   if(isDarkTheme) rgbCircle = "rgba(255, 255, 255,";
