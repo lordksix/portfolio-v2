@@ -6,6 +6,7 @@ import React from 'react';
 import { redirect } from 'next/navigation';
 import { calSans, inter } from '../fonts';
 import { Analytics } from '@vercel/analytics/react';
+import { Providers } from '@/components/context/themeproviders';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,7 +29,9 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body className={`dark:bg-black text-sky-900 min-h-screen w-screen dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

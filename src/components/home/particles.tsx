@@ -2,7 +2,6 @@
 
 import React, { useRef, useEffect } from "react";
 import { useMousePosition } from "@/util/mouse";
-import useBrowserTheme from "@/lib/hooks/use-browser-theme";
 
 interface ParticlesProps {
 	className?: string;
@@ -27,11 +26,6 @@ export default function Particles({
 	const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 	const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
 	const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
-  const { isDarkTheme } = useBrowserTheme();
-
-  let rgbCircle: string;
-  if(isDarkTheme) rgbCircle = "rgba(255, 255, 255,";
-  else rgbCircle = "rgba(0, 0, 0,";
 
 	useEffect(() => {
 		if (canvasRef.current) {
@@ -104,8 +98,8 @@ export default function Particles({
 		const y = Math.floor(Math.random() * canvasSize.current.h);
 		const translateX = 0;
 		const translateY = 0;
-		const size = Math.floor(Math.random() * 2) + 0.1;
-		const alpha = 0;
+		const size = Math.floor(Math.random() * 2.5) + 0.1;
+		const alpha = 0.2;
 		const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
 		const dx = (Math.random() - 0.5) * 0.2;
 		const dy = (Math.random() - 0.5) * 0.2;
@@ -130,7 +124,7 @@ export default function Particles({
 			context.current.translate(translateX, translateY);
 			context.current.beginPath();
 			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			context.current.fillStyle = `${rgbCircle} ${alpha})`;
+			context.current.fillStyle = `rgba(110, 110, 110, ${alpha})`;
 			context.current.fill();
 			context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
 
