@@ -27,7 +27,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className={`dark:bg-black text-sky-900 dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
+      <body className={`dark:bg-black text-sky-900 min-h-screen w-screen dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
         {children}
       </body>
     </html>
