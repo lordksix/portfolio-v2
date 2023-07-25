@@ -16,15 +16,15 @@ export default function LanguageDropdown({ language }: Props) {
     <div className="relative flex items-center text-left">
       <Popover
         content={
-          <div className="w-full p-2 rounded-md bg-slate-700 dark:bg-white">
+          <div className="w-full p-2 rounded-md bg-slate-700 dark:bg-slate-400">
             <Link
-              className="relative flex items-center justify-center w-full p-2 space-x-2 text-sm text-left transition-all duration-75 rounded-md hover:bg-gray-100 dark:hover:bg-gray-200 text-white/90 dark:text-black"
+              className="relative flex items-center justify-center w-full p-2 space-x-2 text-sm text-left transition-all duration-75 rounded-md dark:hover:text-black hover:bg-gray-500 dark:hover:bg-gray-200 text-white/90 dark:text-black"
               href="/" locale="en"
             >
               <p className="text-sm">English</p>
             </Link>
             <Link
-              className="relative flex items-center justify-center w-full p-2 space-x-2 text-sm text-left transition-all duration-75 rounded-md hover:bg-gray-100 dark:hover:bg-gray-200 text-white/90 dark:text-black"
+              className="relative flex items-center justify-center w-full p-2 space-x-2 text-sm text-left transition-all duration-75 rounded-md dark:hover:text-black hover:bg-gray-500 dark:hover:bg-gray-200 text-white/90 dark:text-black"
               href="/" locale="es"
             >
               <p className="text-sm">Español</p>

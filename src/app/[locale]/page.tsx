@@ -1,4 +1,4 @@
-import Footer from '@/components/home/footer';
+import Footer from '@/components/home/footer/footer';
 import Particles from '@/components/home/particles';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ export default function Home() {
   ];
   return (
     <main className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl dark:from-black from-sky-600/70 via-sky-200/20 dark:via-zinc-600/20 to-sky-600/70 dark:to-black">
-      <nav className="my-12 animate-fade-in">
+      <nav className="my-10 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -29,7 +29,7 @@ export default function Home() {
       </nav>
       <div className="my-12 text-center animate-fade-in">
         <h2>
-          <p className="text-lg font-extrabold sm:text-xl">{t('title')}</p>
+          <p className="text-lg font-extrabold sm:text-xl md:text-2xl">{t('title')}</p>
           <p className="sm:text-lg">{t('subtitle')}</p>
         </h2>
       </div>

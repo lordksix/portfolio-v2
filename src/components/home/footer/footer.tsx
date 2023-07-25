@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { FaSquareTwitter, FaLinkedin, FaMedium, FaGithub, FaAngellist } from "react-icons/fa6";
-import LanguageDropdown from '../footer/languageDropdown';
+import LanguageDropdown from './languageDropdown';
 import Link from 'next/link';
 
 
@@ -9,7 +9,7 @@ const Footer = () => {
   const t = useTranslations('Home');
   const c = useTranslations('Common');
   return (
-    <footer className="w-10/12 animate-fade-in">
+    <footer className="w-10/12 animate-fade-in md:w-8/12">
       <div className="flex justify-between">
         <div>
           <p className="text-sm sm:text-base">{t('conect')}</p>
