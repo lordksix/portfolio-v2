@@ -11,5 +11,8 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "Common": {
+    "language": "EN"
   }
 }
