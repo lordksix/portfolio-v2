@@ -1,3 +1,4 @@
+import LanguageDropdown from '@/components/footer/languagedropdown';
 import Particles from '@/components/home/particles';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -6,6 +7,7 @@ import Link from 'next/link';
 export default function Home() {
   const t = useTranslations('Home');
   const n = useTranslations('Navbar');
+  const c = useTranslations('Common');
   const navigation = [
     { name: n('about'), href: "/about" },
     { name: n('projects'), href: "/projects" },
@@ -19,16 +21,17 @@ export default function Home() {
 						<Link
 							key={item.href}
 							href={item.href}
-							className="duration-500 hover:underline"
+							className="text-lg duration-500 hover:underline"
 						>
 							{item.name}
 						</Link>
 					))}
 				</ul>
+        <LanguageDropdown language={c('language')}/>
 			</nav>
-      <div className="my-16 text-center animate-fade-in">
+      <div className="my-12 text-center animate-fade-in">
 				<h2 className="text-lg">
-					<p className="text-xl font-extrabold dark:text-sky-300">{t('title')}</p>
+					<p className="text-xl font-extrabold">{t('title')}</p>
           <p>{t('subtitle')}</p>
 				</h2>
 			</div>
