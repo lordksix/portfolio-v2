@@ -1,5 +1,6 @@
 import Footer from '@/components/home/footer/footer';
 import Particles from '@/components/home/particles';
+import DarkModeButton from '@/components/shared/themeselector';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
@@ -25,6 +26,7 @@ export default function Home() {
               {item.name}
             </Link>
           ))}
+          <DarkModeButton />
         </ul>
       </nav>
       <div className="my-12 text-center animate-fade-in">
