@@ -4,7 +4,6 @@ import { FaSquareTwitter, FaLinkedin, FaMedium, FaGithub, FaAngellist } from "re
 import LanguageDropdown from './languageDropdown';
 import Link from 'next/link';
 
-
 const Footer = () => {
   const t = useTranslations('Home');
   const c = useTranslations('Common');
