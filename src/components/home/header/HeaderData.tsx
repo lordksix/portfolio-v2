@@ -41,7 +41,6 @@ const HeaderData = ({ show = false, links }: Props) => {
         className="bg-black rounded-sm"
       >
       </Image>
-      F1Mania
     </Link>
   );
   const burgerBtnMenuModal = (
