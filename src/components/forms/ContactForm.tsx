@@ -1,6 +1,6 @@
 'use client';
 
-import { useForm, FormProvider, SubmitHandler } from "react-hook-form";
+import { useForm, FormProvider } from "react-hook-form";
 import FormInput from "@/components/forms/FormInput";
 import { useForm as useFormspree } from "@formspree/react";
 import FormTextArea from "./FormTextArea";
@@ -25,10 +25,6 @@ export default function ContactForm({
   if (state.succeeded) {
       return <p>Thanks for joining!</p>;
   }
-
-  const onSubmitHandler: SubmitHandler<FormDataContact> = async (values, e) => {
-    await handleSubmit(e);
-  };
 
   return (
     <FormProvider {...methods}>
