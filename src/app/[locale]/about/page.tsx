@@ -1,5 +1,6 @@
 import Footer from "@/components/home/footer/footer";
 import AccordionDemo from "@/components/shared/accordion";
+import Tooltip from "@/components/shared/tooltip";
 import { useTranslations } from 'next-intl';
 import { FaJava } from 'react-icons/fa6';
 import {
@@ -12,24 +13,38 @@ const AboutPage = () => {
   const t = useTranslations('About');
   const languages = (
     <div className="flex flex-wrap gap-2">
-      <SiTypescript className="w-8 h-8"/><SiJavascript className="w-8 h-8"/><SiPython className="w-8 h-8"/>
-      <FaJava className="w-8 h-8"/><SiPhp className="w-8 h-8"/><SiRuby className="w-8 h-8"/>
-      <SiPostgresql className="w-8 h-8"/><SiMongodb className="w-8 h-8"/><SiHtml5 className="w-8 h-8"/>
-      <SiCss3 className="w-8 h-8"/>
+      <Tooltip content="TypeScript"><SiTypescript className="w-8 h-8"/></Tooltip>
+      <Tooltip content="JavaScript"><SiJavascript className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Python."><SiPython className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Java"><FaJava className="w-8 h-8"/></Tooltip>
+      <Tooltip content="PHP"><SiPhp className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Ruby"><SiRuby className="w-8 h-8"/></Tooltip>
+      <Tooltip content="PostgreSQL"><SiPostgresql className="w-8 h-8"/></Tooltip>
+      <Tooltip content="MongoDB"><SiMongodb className="w-8 h-8"/></Tooltip>
+      <Tooltip content="HTML5"><SiHtml5 className="w-8 h-8"/></Tooltip>
+      <Tooltip content="CSS3"><SiCss3 className="w-8 h-8"/></Tooltip>
     </div>
   );
   const frameworks = (
     <div className="flex flex-wrap gap-2">
-      <SiDjango className="w-8 h-8"/><SiReact className="w-8 h-8"/><SiVite className="w-8 h-8"/>
-      <SiNextdotjs className="w-8 h-8"/><SiBootstrap className="w-8 h-8"/><SiTailwindcss className="w-8 h-8"/>
-      <SiRubyonrails className="w-8 h-8"/>
+      <Tooltip content="Django"><SiDjango className="w-8 h-8"/></Tooltip>
+      <Tooltip content="React"><SiReact className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Vite"><SiVite className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Next.JS"><SiNextdotjs className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Bootstrap"><SiBootstrap className="w-8 h-8"/></Tooltip>
+      <Tooltip content="TailwindCSS"><SiTailwindcss className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Ruby on Rails"><SiRubyonrails className="w-8 h-8"/></Tooltip>
     </div>
   );
   const skills = (
     <div className="flex flex-wrap gap-2">
-      <SiNodedotjs className="w-8 h-8"/><SiGit className="w-8 h-8"/><SiGithub className="w-8 h-8"/>
-      <SiWebpack className="w-8 h-8"/><SiJest className="w-8 h-8"/><SiMocha className="w-8 h-8"/>
-      <SiLinux className="w-8 h-8"/>
+      <Tooltip content="NodeJS"><SiNodedotjs className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Git"><SiGit className="w-8 h-8"/></Tooltip>
+      <Tooltip content="GitHub"><SiGithub className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Webpack"><SiWebpack className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Jest"><SiJest className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Mocha"><SiMocha className="w-8 h-8"/></Tooltip>
+      <Tooltip content="Linux"><SiLinux className="w-8 h-8"/></Tooltip>
     </div>
   );
   const items: AccordionData[] = [
@@ -71,7 +86,7 @@ const AboutPage = () => {
           <p className="sm:text-lg">{t('subtitle')}</p>
         </h2>
       </div>
-      <div className="flex flex-col w-9/12 mx-auto my-10 animate-fade-in sm:grid sm:grid-cols-2 sm:gap-x-10">
+      <div className="flex flex-col w-8/12 mx-auto my-8 animate-fade-in sm:grid sm:grid-cols-2 sm:gap-x-10">
         <div className="flex flex-col justify-center">
           <p>{t('descrip1')}</p>
           <br />
