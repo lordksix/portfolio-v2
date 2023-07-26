@@ -29,10 +29,10 @@ module.exports = {
 				display: ["var(--font-calsans)"],
 			},
       animation: {
-        "fade-in": "fade-in 3s ease-in-out forwards",
-				title: "title 3s ease-out forwards",
-				"fade-left": "fade-left 3.5s ease-in-out forwards",
-				"fade-right": "fade-right 3.5s ease-in-out forwards",
+        "fade-in": "fade-in 2s ease-in-out forwards",
+				title: "title 1.9s ease-out forwards",
+				"fade-left": "fade-left 2s ease-in-out forwards",
+				"fade-right": "fade-right 2s ease-in-out forwards",
         // Fade up and down
         "fade-up": "fade-up 0.7s",
         "fade-down": "fade-down 0.7s",

@@ -18,12 +18,9 @@
 
 @layer base {
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(3, 106, 161, 0.596);
+    -webkit-text-stroke: 1px rgba(12, 74, 110, 0.596);
   }
-
-  @media (prefers-color-scheme: dark) {
-    .text-edge-outline {
-      -webkit-text-stroke: 1px rgba(255,255,255,0.3);
-    }
+  .text-edge-outline-dark {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
   }
 }

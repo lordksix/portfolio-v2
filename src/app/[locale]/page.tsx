@@ -39,13 +39,13 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-        <h1 className="z-10 text-5xl text-transparent duration-1000 cursor-default bg-sky-700 dark:bg-white text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+        <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
+        <h1 className="z-10 text-5xl text-transparent duration-1000 cursor-default bg-sky-900 dark:bg-white text-edge-outline dark:text-edge-outline-dark animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
           lordksix
         </h1>
 
-        <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-        <div className="my-16 text-sm text-center sm:text-base animate-fade-in">
+        <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
+        <div className="w-10/12 my-16 text-sm text-center sm:text-base animate-fade-in">
           <h2>
             {t('descrip1')}
           </h2>
