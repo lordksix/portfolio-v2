@@ -62,7 +62,7 @@ const HeaderData = ({ show = false, links }: Props) => {
       <Suspense fallback={<LoadingData />}>
         <MenuModal {...links} />
         <header
-          className={`fixed top-0 w-full flex justify-center px-4 sm:px-8 md:px-12 ${
+          className={`fixed animate-fade-in top-0 w-full flex justify-center px-4 sm:px-8 md:px-12 ${
             scrolled
               ? "border-b border-gray-600  dark:border-gray-200 bg-white/50 dark:bg-black/50 backdrop-blur-xl"
               : "bg-white/0 dark:bg-black/0"

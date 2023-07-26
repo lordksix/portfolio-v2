@@ -6,3 +6,17 @@ interface AccordionData {
   classTrigger: string;
   classContent: string;
 }
+
+type FormDataContact = {
+  name: string,
+  email: string,
+  message: string,
+}
+
+type ContactFormLabel = {
+  nameLabel: string,
+  emailLabel: string,
+  messageLabel: string,
+  resetLabel: string,
+  submitLabel: string,
+}
