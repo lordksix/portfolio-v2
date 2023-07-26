@@ -1,16 +1,37 @@
 {
   "Home": {
     "welcome": "Bienvenido",
-    "title": "Soy Wladimir Pasquel",
+    "title": "Soy Wladimir P.",
     "subtitle": "también conocido como",
-    "descrip1": "Soy un desarrolador de programas! Yo puedo ayudar a construir tu próximo producto, característica o aplicación web. Explora algunos de mis trabajos y proyectos!",
+    "descrip1": "Soy un desarrollador de software! Yo puedo ayudar a construir tu próximo producto, característica o aplicación web. Explora algunos de mis trabajos y proyectos!",
     "descrip2": "Si te gusta lo que vez y tienes algún projecto que necesitas ser creado, no dudes en contactarme.",
     "conect": "Connectemos"
   },
+  "About": {
+    "title": "acerca de lordksix",
+    "subtitle": "Desarrollador de software Full-stack",
+    "descrip1": "Soy un desarrollador de software! Amante de Python con experiencia con Django. Experiencia en Java. Codifico diariamente en Typescript. Experto en Ruby.",
+    "descrip2": "Si te gusta lo que vez y tienes algún projecto que necesitas ser creado, no dudes en contactarme.",
+    "language": "Lenguajes",
+    "framework": "Frameworks",
+    "skill": "Habilidades"
+  },
   "MetadataHome": {
     "title": "Lordkisx Portafolio",
-    "description": "Todo sobre lordksix. Acerca de, proyectos e información de contacto.",
+    "description": "lordksix. Acerca de, proyectos e información de contacto.",
     "author": "Creado por @lordksix en GitHub"
+  },
+  "MetadataAbout": {
+    "title": "Acerca",
+    "description": "lordksix. Información acerca de lordksix."
+  },
+  "MetadataProjects": {
+    "title": "Proyectos",
+    "description": "lordksix. Información sobre proyectos de lordksix."
+  },
+  "MetadataContact": {
+    "title": "Contacto",
+    "description": "Información de contacto de lordksix."
   },
   "Navbar": {
     "about": "Acerca",
