@@ -1,6 +1,5 @@
 import Footer from '@/components/home/footer/footer';
 import HeaderData from '@/components/home/header/HeaderData';
-import Particles from '@/components/home/particles';
 import DarkModeButton from '@/components/shared/themeselector';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -18,7 +17,7 @@ export default function Home() {
   return (
     <>
       <HeaderData show={false} links={navigation} />
-      <main className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl dark:from-black from-sky-600/70 via-sky-200/20 dark:via-zinc-600/20 to-sky-600/70 dark:to-black">
+      <main className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
         <nav className="my-10 animate-fade-in">
           <ul className="flex items-center justify-center gap-4">
             {navigation.map((item) => (
@@ -41,10 +40,6 @@ export default function Home() {
         </div>
 
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-        <Particles
-          className="absolute inset-0 -z-10 animate-fade-in"
-          quantity={100}
-        />
         <h1 className="z-10 text-5xl text-transparent duration-1000 cursor-default bg-sky-700 dark:bg-white text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
           lordksix
         </h1>

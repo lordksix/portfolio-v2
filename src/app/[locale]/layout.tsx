@@ -1,7 +1,6 @@
 import '../globals.css';
-import type { Metadata } from 'next';
 import {useLocale} from 'next-intl';
-
+import Particles from '@/components/home/particles';
 import React from 'react';
 import { redirect } from 'next/navigation';
 import { calSans, inter } from '../fonts';
@@ -57,8 +56,12 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className={`dark:bg-black text-sky-900 min-h-screen w-screen dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
+      <body className={`bg-gradient-to-tl dark:from-black from-sky-600/70 via-sky-200/20 dark:via-zinc-600/20 to-sky-600/70 dark:to-black min-h-screen w-screen dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
         <Providers>
+          <Particles
+            className="absolute inset-0 -z-10 animate-fade-in"
+            quantity={100}
+          />
           {children}
         </Providers>
       </body>
