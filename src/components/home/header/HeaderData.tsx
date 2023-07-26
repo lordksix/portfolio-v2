@@ -50,7 +50,7 @@ const HeaderData = ({ show = false, links }: Props) => {
   );
   const burgerBtnMenuModal = (
     <button
-    className="rounded-full border border-gray-800 dark:border-gray-200 bg-sky-900 dark:bg-white p-1.5 px-4 text-sm text-white dark:text-sky-900 transition-all hover:bg-white hover:text-sky-900 dark:hover:bg-sky-900 dark:hover:text-white"
+    className="rounded-full border border-gray-800 dark:border-gray-200 bg-sky-900 dark:bg-white p-1.5 px-4 text-sm text-white dark:text-black transition-all hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white"
     onClick={() => setShowMenuModal(true)}
   >
     <GiHamburgerMenu />
