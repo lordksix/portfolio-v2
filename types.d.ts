@@ -12,3 +12,11 @@ type FormDataContact = {
   email: string,
   message: string,
 }
+
+type ContactFormLabel = {
+  nameLabel: string,
+  emailLabel: string,
+  messageLabel: string,
+  resetLabel: string,
+  submitLabel: string,
+}

@@ -11,7 +11,7 @@ type FormInputProps = {
 const FormInput: React.FC<FormInputProps> = ({
   label,
   name,
-  required = false,
+  required = true,
   type = "text",
 }) => {
   const {
@@ -20,7 +20,7 @@ const FormInput: React.FC<FormInputProps> = ({
   } = useFormContext();
   return (
     <div className="">
-      <label htmlFor={name} className="block mb-3 text-ct-blue-600">
+      <label htmlFor={name} className="block mb-2">
         {label}
       </label>
       <input
