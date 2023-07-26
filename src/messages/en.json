@@ -1,11 +1,37 @@
 {
   "Home": {
     "welcome": "Welcome",
-    "title": "I am Wladimir Pasquel",
+    "title": "I am Wladimir P.",
     "subtitle": "also known as",
     "descrip1": "I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience!",
     "descrip2": "If you like what you see and have a project you need coded, don't hesitate to contact me.",
     "conect": "Let's connect"
+  },
+  "About": {
+    "title": "about lordksix",
+    "subtitle": "Full-stack software developer",
+    "descrip1": "I'm a software developer! Python lover with Django experience. Java strong. Typescript daily coder. Ruby expert.",
+    "descrip2": "If you like what you see and have a project you need coded, don't hesitate to contact me.",
+    "language": "Languages",
+    "framework": "Frameworks",
+    "skill": "Skills"
+  },
+  "MetadataHome": {
+    "title": "Lordkisx Portfolio",
+    "description": "lordksix. About, projects and contact information.",
+    "author": "Created by @lordksix at GitHub"
+  },
+  "MetadataAbout": {
+    "title": "About",
+    "description": "lordksix. Information about lordksix."
+  },
+  "MetadataProjects": {
+    "title": "Proyects",
+    "description": "lordksix. Different projects by lordksix."
+  },
+  "MetadataContact": {
+    "title": "Contact",
+    "description": "lordksix contact information."
   },
   "Navbar": {
     "about": "About",
