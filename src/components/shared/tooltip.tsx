@@ -32,7 +32,7 @@ export default function Tooltip({
       {openTooltip && isMobile && (
         <Leaflet setShow={setOpenTooltip}>
           {typeof content === "string" ? (
-            <span className="flex min-h-[150px] w-full items-center justify-center bg-white px-10 text-center text-sm text-gray-700">
+            <span className="flex min-h-[100px] w-full items-center justify-center bg-white px-10 text-center text-sm text-gray-700">
               {content}
             </span>
           ) : (

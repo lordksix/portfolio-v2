@@ -12,7 +12,7 @@ type Props = {
 
 const AccordionDemo = ({ accordionItems }: Props) => (
   <Accordion.Root
-    className="bg-sky-200 dark:bg-gray-200 w-[300px] rounded-md shadow-[0_2px_10px] shadow-black/10 dark:shadow-white/30"
+    className="bg-sky-200 dark:bg-gray-200  w-full max-w-[300px] rounded-md shadow-[0_2px_10px] shadow-black/10 dark:shadow-white/30"
     type="single"
     defaultValue="item-1"
     collapsible
