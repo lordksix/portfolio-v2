@@ -16,6 +16,15 @@
     "framework": "Frameworks",
     "skill": "Habilidades"
   },
+  "Contact": {
+    "title": "contáctame",
+    "description": " Si tienes una aplicación que te gustaría desarrolla, una nueva característica que necesitas construir o un proyecto que necesita ser codificado, contáctame. Estaré encantado de ayudarte",
+    "name": "Nombre",
+    "email": "E-mail",
+    "message": "Mensaje",
+    "reset": "Reset",
+    "Submit": "Contáctame"
+  },
   "MetadataHome": {
     "title": "Lordkisx Portafolio",
     "description": "lordksix. Acerca de, proyectos e información de contacto.",

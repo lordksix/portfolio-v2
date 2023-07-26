@@ -16,6 +16,15 @@
     "framework": "Frameworks",
     "skill": "Skills"
   },
+  "Contact": {
+    "title": "contact me",
+    "description": "If you have an application you are interested in developing, a feature that you need built or a project that needs coding, contact me. I'd love to help with it!",
+    "name": "Name",
+    "email": "E-mail",
+    "message": "Message",
+    "reset": "Reset",
+    "submit": "Get in touch"
+  },
   "MetadataHome": {
     "title": "Lordkisx Portfolio",
     "description": "lordksix. About, projects and contact information.",
