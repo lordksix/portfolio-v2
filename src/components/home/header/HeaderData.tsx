@@ -10,6 +10,7 @@ import { useMenuModal } from './MenuModal';
 import LoadingData from '../../shared/loadingData';
 import { useRouter } from 'next/navigation';
 import { GoHomeFill } from 'react-icons/go';
+import DarkModeButton from '@/components/shared/themeselector';
 
 
 type Props = {
@@ -31,21 +32,25 @@ const HeaderData = ({ show = false, links }: Props) => {
     </button>
   );
   const logo = (
-    <Link href="/" className="flex flex-wrap items-center justify-center gap-2 px-4 py-1 rounded-md hover:text-white/90 hover:bg-black dark:hover:text-black dark:hover:bg-white/90">
-      <GoHomeFill />
-      <Image
-        src="/lordksix-logos_transparent.png"
-        alt="lordksix logo"
-        width="100"
-        height="30"
-        className="bg-black rounded-sm"
-      >
-      </Image>
-    </Link>
+    <div className="flex items-center gap-4">
+      <Link href="/" className="flex flex-wrap items-center justify-center gap-2 px-4 py-1 rounded-md hover:text-white/90 hover:bg-sky-900 dark:hover:text-black dark:hover:bg-white/90">
+        <GoHomeFill />
+        <Image
+          src="/lordksix-logos_transparent.png"
+          alt="lordksix logo"
+          width="100"
+          height="30"
+          className="rounded-sm bg-sky-900 dark:bg-black"
+        >
+        </Image>
+      </Link>
+      <DarkModeButton />
+    </div>
+
   );
   const burgerBtnMenuModal = (
     <button
-    className="rounded-full border border-gray-800 dark:border-gray-200 bg-black dark:bg-white p-1.5 px-4 text-sm text-white dark:text-black transition-all hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white"
+    className="rounded-full border border-gray-800 dark:border-gray-200 bg-sky-900 dark:bg-white p-1.5 px-4 text-sm text-white dark:text-sky-900 transition-all hover:bg-white hover:text-sky-900 dark:hover:bg-sky-900 dark:hover:text-white"
     onClick={() => setShowMenuModal(true)}
   >
     <GiHamburgerMenu />
