@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { FaSquareTwitter, FaLinkedin, FaMedium, FaGithub, FaAngellist } from "react-icons/fa6";
-import LanguageDropdown from './languageDropdown';
+import LanguageDropdown from '../../shared/languageDropdown';
 import Link from 'next/link';
 
 const Footer = () => {

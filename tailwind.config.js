@@ -39,6 +39,9 @@ module.exports = {
         // Tooltip
         "slide-up-fade": "slide-up-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
         "slide-down-fade": "slide-down-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+        // Accordion
+        slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
       },
       keyframes: {
         "fade-in": {
@@ -134,6 +137,15 @@ module.exports = {
         "slide-down-fade": {
           "0%": { opacity: 0, transform: "translateY(-6px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        // Accordion
+        slideDown: {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        slideUp: {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
         },
       },
     },
