@@ -37,7 +37,7 @@ export default function LanguageDropdown({ language }: Props) {
       >
         <button
           onClick={() => setOpenPopover(!openPopover)}
-          className="flex items-center justify-center w-8 h-8 overflow-hidden transition-all duration-75 border rounded-full border-sky-900 hover:bg-sky-900 hover:text-white dark:border-gray-300 focus:outline-none active:scale-95 sm:h-9 sm:w-9 dark:hover:bg-gray-300 dark:hover:text-black"
+          className="flex items-center justify-center w-10 h-10 overflow-hidden font-black transition-all duration-75 border-2 rounded-full border-sky-900 hover:bg-sky-900 hover:text-white dark:border-gray-300 focus:outline-none active:scale-90 dark:hover:bg-gray-300 dark:hover:text-black"
         >
           {language}
         </button>

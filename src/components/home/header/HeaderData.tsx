@@ -32,8 +32,8 @@ const HeaderData = ({ show = false, links }: Props) => {
     </button>
   );
   const logo = (
-    <div className="flex items-center gap-4">
-      <Link href="/" className="flex flex-wrap items-center justify-center gap-2 px-4 py-1 rounded-md hover:text-white/90 hover:bg-sky-900 dark:hover:text-black dark:hover:bg-white/90">
+    <div className="flex items-center gap-1">
+      <Link href="/" className="flex flex-wrap items-center justify-center gap-1 px-2 py-1 rounded-md hover:text-white/90 hover:bg-sky-900 dark:hover:text-black dark:hover:bg-white/90">
         <GoHomeFill />
         <Image
           src="/lordksix-logos_transparent.png"
