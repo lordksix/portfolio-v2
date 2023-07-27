@@ -8,6 +8,22 @@ import {
   SiHtml5, SiCss3, SiDjango, SiReact, SiVite, SiNextdotjs, SiBootstrap, SiTailwindcss,
   SiRubyonrails, SiNodedotjs, SiGit, SiGithub, SiWebpack, SiJest, SiMocha, SiLinux,
 } from "react-icons/si";
+import { getTranslator } from 'next-intl/server';
+
+export async function generateMetadata({params: { locale }}: {params: { locale: string }}) {
+  const t = await getTranslator(locale, 'MetadataAbout');
+  if(!t) {
+    return {
+      title: 'About',
+      description:
+        'Information about lordksix.'
+    };
+  }
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 const AboutPage = () => {
   const t = useTranslations('About');
