@@ -25,6 +25,12 @@
     "reset": "Reset",
     "submit": "Get in touch"
   },
+  "Projects": {
+    "title": "amazing projects",
+    "description": "Please check the amazing projects, complete or ongoing by lordksix",
+    "star": "Main Projects",
+    "extra": "More Projects"
+  },
   "MetadataHome": {
     "title": "Lordkisx Portfolio",
     "description": "lordksix. About, projects and contact information.",
@@ -32,15 +38,15 @@
   },
   "MetadataAbout": {
     "title": "About",
-    "description": "lordksix. Information about lordksix."
+    "description": "Information about lordksix."
   },
   "MetadataProjects": {
-    "title": "Proyects",
-    "description": "lordksix. Different projects by lordksix."
+    "title": "Projects",
+    "description": "Different projects by lordksix."
   },
   "MetadataContact": {
     "title": "Contact",
-    "description": "lordksix contact information."
+    "description": "Information about lordksix."
   },
   "Navbar": {
     "about": "About",

@@ -38,7 +38,6 @@ export async function generateMetadata({params: { locale }}: {params: { locale: 
     metadataBase: new URL("https://lordksix-portfolio.vercel.app"),
     author: t('author'),
   };
-
 }
 
 export default function RootLayout({

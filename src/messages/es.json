@@ -25,6 +25,12 @@
     "reset": "Reset",
     "submit": "Contáctame"
   },
+  "Projects": {
+    "title": "proyectos increíbles",
+    "description": "Por favor, revisa estos proyectos increíbles, completos o en desarrollo por lordksix",
+    "star": "Proyectos Principales",
+    "extra": "Más Proyectos"
+  },
   "MetadataHome": {
     "title": "Lordkisx Portafolio",
     "description": "lordksix. Acerca de, proyectos e información de contacto.",
@@ -32,11 +38,11 @@
   },
   "MetadataAbout": {
     "title": "Acerca",
-    "description": "lordksix. Información acerca de lordksix."
+    "description": "Información acerca de lordksix."
   },
   "MetadataProjects": {
     "title": "Proyectos",
-    "description": "lordksix. Información sobre proyectos de lordksix."
+    "description": "Información sobre proyectos de lordksix."
   },
   "MetadataContact": {
     "title": "Contacto",
