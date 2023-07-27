@@ -55,7 +55,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
-      <body className={`bg-gradient-to-tl dark:from-black from-sky-600/70 via-sky-200/20 dark:via-zinc-600/20 to-sky-600/70 dark:to-black min-h-screen w-screen text-sky-900 dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
+      <body className={`bg-gradient-to-tl no-scrollbar dark:from-black from-sky-600/70 via-sky-200/20 dark:via-zinc-600/20 to-sky-600/70 dark:to-black min-h-screen w-screen text-sky-900 dark:text-white ${[inter.variable, calSans.variable].join(" ")}`} suppressHydrationWarning={true}>
         <Providers>
           <Particles
             className="absolute inset-0 -z-10 animate-fade-in"
