@@ -29,7 +29,13 @@
     "title": "proyectos increíbles",
     "description": "Por favor, revisa estos proyectos increíbles, completos o en desarrollo por lordksix",
     "star": "Proyectos Principales",
-    "extra": "Más Proyectos"
+    "extra": "Más Proyectos",
+    "projectName": "nameES",
+    "projectDescrip": "descriptionES",
+    "liveDemo": "Demostración",
+    "github": "Repositorio",
+    "techStack": "Tecnologías",
+    "techtag": "techtagES"
   },
   "MetadataHome": {
     "title": "Lordkisx Portafolio",

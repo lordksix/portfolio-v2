@@ -29,7 +29,13 @@
     "title": "amazing projects",
     "description": "Please check the amazing projects, complete or ongoing by lordksix",
     "star": "Main Projects",
-    "extra": "More Projects"
+    "extra": "More Projects",
+    "projectName": "nameEN",
+    "projectDescrip": "descriptionEN",
+    "liveDemo": "Live Demo",
+    "github": "GitHub Repo",
+    "techStack": "Tech-Stack",
+    "techtag": "techtagEN"
   },
   "MetadataHome": {
     "title": "Lordkisx Portfolio",
