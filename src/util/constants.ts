@@ -1,4 +1,4 @@
-const formula1: projectData = {
+const f1mania: projectData = {
   nameEN: 'F1Mania App',
   nameES: 'F1Mania App',
   stared: true,
@@ -33,3 +33,5 @@ const webtronicsairapp: projectData = {
   snapshot: 'https://raw.githubusercontent.com/lordksix/portafolio-v2/main/assets/webtronicsairapp/snapshot.png',
   techtag: ['ReactJS', 'JavaScript', 'Axios', 'Jest', 'MSW', 'Redux', 'React-Router', 'Testing-Library'],
 }
+
+export const mockData: projectData[] = [f1mania, spacetravelers, webtronicsairapp];
