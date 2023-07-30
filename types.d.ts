@@ -20,3 +20,15 @@ type ContactFormLabel = {
   resetLabel: string,
   submitLabel: string,
 }
+
+type projectData = {
+  nameEN: string,
+  nameES: string,
+  stared: boolean,
+  descriptionEN: string,
+  descriptionES: string,
+  url: string,
+  repo: string,
+  snapshot: string,
+  techtag: string[],
+}
