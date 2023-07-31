@@ -1,6 +1,19 @@
 import Footer from '@/components/home/footer/footer';
+import processData from '@/components/projects/process-project-data';
+import ProjectSwiper from '@/components/projects/project-swiper';
+import { mockData } from '@/util/constants';
 import { useTranslations } from 'next-intl';
 import { getTranslator } from 'next-intl/server';
+import { ReactNode } from 'react';
+
+type processedData = {
+  name: ReactNode,
+  description: ReactNode,
+  url: string,
+  repo: string,
+  snapshot: string,
+  techtag: ReactNode,
+}
 
 export async function generateMetadata({params: { locale }}: {params: { locale: string }}) {
   const t = await getTranslator(locale, 'MetadataProjects');
@@ -17,9 +30,9 @@ export async function generateMetadata({params: { locale }}: {params: { locale: 
   };
 }
 
-const AboutPage = () => {
+const ProjectPage = () => {
   const t = useTranslations('Projects');
-
+  const processedData = processData(mockData, t('projectName'), t('projectDescrip'), 'techtag');
   return (
     <main className="flex flex-col items-center justify-center w-screen min-h-screen pt-24 pb-10 overflow-hidden sm:pt-16">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
@@ -30,13 +43,11 @@ const AboutPage = () => {
       <div className="my-6 text-center animate-fade-in">
         <h2>{t('description')}</h2>
       </div>
-      <div className="my-6 animate-fade-in w-8/12 md:w-9/12 lg:w-8/12">
+      <div className="w-8/12 my-6 animate-fade-in md:w-9/12 lg:w-8/12">
         <h3 className='font-bold'>{t('star')}</h3>
-        <div>
-            <p>Proyectos</p>
-        </div>
+        <ProjectSwiper data={processedData} />
       </div>
-      <div className="my-6 animate-fade-in w-8/12 md:w-9/12 lg:w-8/12">
+      <div className="w-8/12 my-6 animate-fade-in md:w-9/12 lg:w-8/12">
         <h3 className='font-bold'>{t('extra')}</h3>
         <div>
             <p>Proyectos</p>
@@ -47,4 +58,4 @@ const AboutPage = () => {
   )
 };
 
-export default AboutPage;
+export default ProjectPage;
