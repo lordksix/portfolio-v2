@@ -32,3 +32,4 @@ type projectData = {
   snapshot: string,
   techtag: string[],
 }
+
