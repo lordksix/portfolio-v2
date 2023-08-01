@@ -27,8 +27,7 @@ type projectData = {
   stared: boolean,
   descriptionEN: string,
   descriptionES: string,
-  url: string,
-  repo: string,
+  url: string[],
   snapshot: string,
   techtag: string[],
 }
