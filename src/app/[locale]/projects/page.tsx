@@ -9,8 +9,7 @@ import { ReactNode } from 'react';
 type processedData = {
   name: ReactNode,
   description: ReactNode,
-  url: string,
-  repo: string,
+  url: string[],
   snapshot: string,
   techtag: ReactNode,
 }
@@ -32,7 +31,7 @@ export async function generateMetadata({params: { locale }}: {params: { locale: 
 
 const ProjectPage = () => {
   const t = useTranslations('Projects');
-  const processedData = processData(mockData, t('projectName'), t('projectDescrip'), 'techtag');
+  const processedData = processData(mockData, t('projectName'), t('projectDescrip'), 'techtag', [t('liveDemo'), t('github')]);
   return (
     <main className="flex flex-col items-center justify-center w-screen min-h-screen pt-24 pb-10 overflow-hidden sm:pt-16">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
@@ -43,8 +42,8 @@ const ProjectPage = () => {
       <div className="my-6 text-center animate-fade-in">
         <h2>{t('description')}</h2>
       </div>
-      <div className="w-8/12 my-6 animate-fade-in md:w-9/12 lg:w-8/12">
-        <h3 className='font-bold'>{t('star')}</h3>
+      <div className="w-11/12 my-6 animate-fade-in md:w-10/12">
+        <h3 className='w-full text-4xl font-bold text-center'>{t('star')}</h3>
         <ProjectSwiper data={processedData} />
       </div>
       <div className="w-8/12 my-6 animate-fade-in md:w-9/12 lg:w-8/12">
