@@ -12,10 +12,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 type Props = {
   data: {
-    name: ReactNode | string,
-    description: ReactNode | string,
-    url: string,
-    repo: string,
+    name: ReactNode,
+    description: ReactNode,
+    url: ReactNode,
     snapshot: string,
     techtag: ReactNode,
   }[];
@@ -50,24 +49,23 @@ const ProjectSwiper = ({ data }: Props) => {
           {data.map((item) => {
             return (
               <SwiperSlide key={uuidv4()}>
-                <a href={item.url} target="_blank" rel="noreferrer">
-                  <div className="z-20 flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen pt-20 space-y-5 snap-center sm:justify-center md:pt-20 ">
-                    <Image
-                      src={item.snapshot}
-                      priority={true}
-                      alt=""
-                      className="transition-all ease-in-out w-[300px] hover:scale-95 hover:drop-shadow-2xl "
-                      width={300}
-                      height={300}
-                      quality={100}
-                    />
-                    <div className="max-w-3xl px-4 space-y-10 text-center md:px-10">
-                      {item.name}
-                      {item.description}
-                      {item.techtag}
-                    </div>
+                <div className="z-20 flex flex-col items-center justify-center flex-shrink-0 w-full h-full pt-5 pb-10 space-y-5 snap-center sm:justify-center md:pt-10 ">
+                  <Image
+                    src={item.snapshot}
+                    priority={true}
+                    alt=""
+                    className="transition-all ease-in-out w-[300px] hover:scale-95 hover:drop-shadow-2xl "
+                    width={300}
+                    height={300}
+                    quality={100}
+                  />
+                  <div className="max-w-3xl px-6 space-y-10 text-center md:px-10">
+                    {item.name}
+                    {item.description}
+                    {item.techtag}
+                    {item.url}
                   </div>
-                </a>
+                </div>
               </SwiperSlide>
             );
           })}
