@@ -18,7 +18,7 @@ const processBullet = (element: string[]) => {
       {element.map((elem) => (
         <span
           key={uuidv4()}
-          className="px-2 py-1 text-white rounded bg-sky-900 hover:bg-sky-700 dark:bg-white dark:text-black dark:hover:bg-gray-300"
+          className="px-2 py-1 font-medium text-yellow-400 rounded bg-sky-900 hover:bg-sky-700 dark:bg-white dark:text-black dark:hover:bg-gray-300"
         >
           {elem}
         </span>
@@ -36,7 +36,7 @@ const processLinks = (element: string[], elementTag: string[]) => {
           key={uuidv4()}
           rel="noreferrer"
           target="_blank"
-          className="flex items-center justify-between gap-2 px-2 py-2 text-white rounded bg-sky-900 hover:bg-sky-700 dark:bg-white dark:text-black dark:hover:bg-gray-300"
+          className="flex items-center justify-between gap-2 px-2 py-2 font-medium text-white rounded bg-sky-900 hover:bg-sky-700 dark:bg-white dark:text-black dark:hover:bg-gray-300"
           href={elem}
         >
           {i === 0 ? <VscLiveShare className="w-8 h-8"/> : <SiGithub className="w-8 h-8"/>}
@@ -52,7 +52,7 @@ const processData = (data: projectData[], name: string, description: string, tec
   const processedData: processedData[] = [];
    data.forEach((dataElement, i) => {
     const elementName: ReactNode = (
-      <h4 className="text-3xl font-semibold tracking-wide flex flex-col cursor-default text-[#F7AB0A]/70">
+      <h4 className="flex flex-col text-3xl font-semibold tracking-wide text-red-600 cursor-default">
         {dataElement[name as keyof projectData]}
       </h4>
     );
