@@ -13,7 +13,6 @@
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-popover": "^1.0.6",
     "@radix-ui/react-tooltip": "^1.0.6",
-    "@types/node": "20.4.4",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
     "@vercel/analytics": "^1.0.1",
@@ -23,6 +22,7 @@
     "eslint-config-next": "13.4.12",
     "focus-trap-react": "^10.2.1",
     "framer-motion": "^10.13.1",
+    "mongodb": "^5.7.0",
     "next": "13.4.12",
     "next-intl": "^3.0.0-beta.9",
     "next-themes": "^0.2.1",
@@ -37,6 +37,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.4.5",
     "@types/uuid": "^9.0.2"
   }
 }
