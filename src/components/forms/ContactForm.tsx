@@ -10,7 +10,8 @@ export default function ContactForm({
   emailLabel,
   messageLabel,
   resetLabel,
-  submitLabel, }: ContactFormLabel) {
+  submitLabel,
+  confirmation, }: ContactFormLabel) {
   const methods = useForm<FormDataContact>({
     defaultValues: {
       name: '',
@@ -23,7 +24,7 @@ export default function ContactForm({
 
   const [state, handleSubmit] = useFormspree(process.env.NEXT_PUBLIC_FORM as string);
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p className="text-lg">{confirmation}</p>;
   }
 
   return (

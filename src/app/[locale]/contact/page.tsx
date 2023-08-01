@@ -27,6 +27,7 @@ const AboutPage = () => {
     messageLabel: t('message'),
     resetLabel: t('reset'),
     submitLabel: t('submit'),
+    confirmation: t('confirmed')
   };
   return (
     <main className="flex flex-col items-center justify-center w-screen min-h-screen pt-24 pb-10 overflow-hidden sm:pt-16">
@@ -42,7 +43,7 @@ const AboutPage = () => {
         <div>
             <ContactForm
               nameLabel={items.nameLabel} emailLabel={items.emailLabel} messageLabel={items.messageLabel}
-              resetLabel={items.resetLabel} submitLabel={items.submitLabel}
+              resetLabel={items.resetLabel} submitLabel={items.submitLabel} confirmation={items.confirmation}
             />
         </div>
       </div>

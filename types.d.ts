@@ -19,6 +19,7 @@ type ContactFormLabel = {
   messageLabel: string,
   resetLabel: string,
   submitLabel: string,
+  confirmation: string,
 }
 
 type projectData = {

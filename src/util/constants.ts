@@ -6,7 +6,7 @@ const f1mania: projectData = {
   descriptionES: 'La aplicación F1Mania es un projecto de aplicación web en continuo desarrollo sobre la Fórmula 1. Aquí puedes conseguir información histórica, data actualizada, calendario actualiza, tabla de posiciones actualizado, y noticias. Interacciones del usuario, como comentarios y selección de piloto favorito o escudaria favorita, está siendo implementado. La aplicación utiliza MongoDB, TailwindCSS, TypeScript, NextJS, y más.',
   url: ['https://f1-next-app.vercel.app/', 'https://github.com/lordksix/f1-next-app/'],
   snapshot: 'https://raw.githubusercontent.com/lordksix/portfolio-v2/main/assets/f1mania/snapshot.png',
-  techtag: ['NextJS', 'TypeScript', 'TailwindCSS', 'MongoDB', 'Framer-Montion', 'Radix-UI', 'MDX', 'BCRYPT', 'Vercel', 'REST API'],
+  techtag: ['NextJS', 'TypeScript', 'TailwindCSS', 'MongoDB', 'Framer-Montion', 'Radix-UI', 'MDX', 'BCRYPT', 'Vercel', 'REST API', 'react-hook-form'],
 }
 
 const spacetravelers: projectData = {
@@ -31,4 +31,15 @@ const webtronicsairapp: projectData = {
   techtag: ['ReactJS', 'JavaScript', 'Axios', 'Jest', 'MSW', 'Redux', 'React-Router', 'Testing-Library'],
 }
 
-export const mockData: projectData[] = [f1mania, spacetravelers, webtronicsairapp];
+const portfoliov2: projectData = {
+  nameEN: 'Personal Portfolio',
+  nameES: 'Portafolio Personal',
+  stared: true,
+  descriptionEN: 'Amazing interactive and responsive web application that can be use as a personal portfolio. It helps to showcase your skills, technologies you utilize, and lenguages you know. It uses a slider to showcase your projects and to guide the user to a live demo and GitHub Repo. It utilizes next-intl to help with internationalization, live demo has versions in English and Spanish. The project also has light and dark version that can be switch depending on user preference using next-theme. Project information is saved in a MongoDB Collection. It is also integrated to FormSpree to handle form submition and react-hook-form to handle contact form state. It utilizes farmer-motion and radix-ui to handle events for modal, tooltip, leaftip, and Swiper to create sliders.',
+  descriptionES: 'Increíble aplicación web interactiva y receptivo que puede ser utilizado como portafolio personal. Ayuda a mostrar tus habilidades, tecnologías que utilizas, y lenguajes que conoces. Utiliza un slider para poner en visitra tus projectos y guiar al usuario a la demostración en vivo y a tu GitHub Repo. Utiliza next-intl para ayudar con la internacionación, demostración en vivo tiene inglés y español. El project también tiene versiones light y dark que puede ser cambiado según preferencia, utilizando next-theme. Información de projectos está guardado en una colleción de MongoDB. Está integrando a FormSpree para manejar la presentación del formulación y react-hook-form para manejar los estados del formulario. Utiliza farmer-motion y raxix-ui para manejar los eventos de los modales, tooltip, leaftip, y utliza Swiper para crear sliders',
+  url: ['https://lordksix-portfolio.vercel.app/', 'https://github.com/lordksix/portfolio-v2'],
+  snapshot: 'https://raw.githubusercontent.com/lordksix/portfolio-v2/main/assets/portfoliov2/snapshot.png',
+  techtag: ['NextJS', 'TypeScript', 'TailwindCSS', 'MongoDB', 'Framer-Montion', 'Radix-UI', 'MDX', 'FormSpree', 'Vercel', 'Next-Intl', 'Next-Theme', 'Swiper', 'react-hook-form'],
+}
+
+export const mockData: projectData[] = [f1mania, portfoliov2, spacetravelers, webtronicsairapp];
