@@ -17,7 +17,7 @@ const DarkModeButton = () => {
   }
 
   return (
-    <button onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')} className="flex items-center justify-start w-6 h-6 rounded hover:bg-sky-900 dark:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white">
+    <button onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')} className="flex items-center active:scale-90 justify-start w-6 h-6 rounded hover:bg-sky-900 dark:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white">
         {theme === 'dark' ? <FaMoon className="w-4 h-4 mx-auto"/> : <FaSun className="w-4 h-4 mx-auto"/>}
     </button>
   );

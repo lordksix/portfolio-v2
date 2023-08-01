@@ -26,7 +26,7 @@ const FormInput: React.FC<FormInputProps> = ({
       <input
         type={type}
         id={name}
-        className="block w-full px-4 py-2 text-black appearance-none rounded-2xl focus:outline-none"
+        className="block w-full px-4 py-2 text-black bg-white appearance-none rounded-2xl focus:outline-none"
         {...register(name, { required })}
         aria-invalid={errors[name] ? "true" : "false"}
       />
