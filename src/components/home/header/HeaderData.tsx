@@ -27,13 +27,13 @@ const HeaderData = ({ show = false, links }: Props) => {
   const { MenuModal, setShowMenuModal } = useMenuModal();
 
   const returnBtn = (
-    <button type="button" className="flex items-center justify-center hover:text-blue-500" onClick={() => router.back()}  title="goback">
+    <button type="button" className="flex items-center justify-center hover:text-blue-500 active:scale-90" onClick={() => router.back()}  title="goback">
       <FaChevronLeft />
     </button>
   );
   const logo = (
     <div className="flex items-center gap-1">
-      <Link href="/" className="flex flex-wrap items-center justify-center gap-1 px-2 py-1 rounded-md hover:text-white/90 hover:bg-sky-900 dark:hover:text-black dark:hover:bg-white/90">
+      <Link href="/" className="flex flex-wrap items-center active:scale-90 justify-center gap-1 px-2 py-1 rounded-md hover:text-white/90 hover:bg-sky-900 dark:hover:text-black dark:hover:bg-white/90">
         <GoHomeFill />
         <Image
           src="/lordksix-logos_transparent.png"
@@ -50,7 +50,7 @@ const HeaderData = ({ show = false, links }: Props) => {
   );
   const burgerBtnMenuModal = (
     <button
-    className="rounded-full border border-gray-800 dark:border-gray-200 bg-sky-900 dark:bg-white p-1.5 px-4 text-sm text-white dark:text-black transition-all hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white"
+    className="rounded-full border border-gray-800 dark:border-gray-200 bg-sky-900 active:scale-90 dark:bg-white p-1.5 px-4 text-sm text-white dark:text-black transition-all hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white"
     onClick={() => setShowMenuModal(true)}
   >
     <GiHamburgerMenu />

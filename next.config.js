@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  staticPageGenerationTimeout: 1000,
+  swcMinify: true,
+  images: {
+    domains: [
+      'www.countryflagicons.com', 'avatars.githubusercontent.com', 'raw.githubusercontent.com',
+      'platform-lookaside.fbsbx.com', 'lh3.googleusercontent.com',
+    ],
+  },
   async redirects() {
     return [
       {

@@ -14,19 +14,19 @@ const Footer = () => {
           <p className="text-sm sm:text-base">{t('conect')}</p>
           <div className="flex justify-start gap-2">
             <Link href={'https://twitter.com/wapasquel'}>
-              <FaSquareTwitter className="w-8 h-8 hover:bg-sky-900 hover:text-white dark:hover:text-black dark:hover:bg-white"/>
+              <FaSquareTwitter className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
             <Link href={'https://www.linkedin.com/in/wladpasquel/'}>
-              <FaLinkedin className="w-8 h-8 hover:bg-sky-900 hover:text-white dark:hover:text-black dark:hover:bg-white"/>
+              <FaLinkedin className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
             <Link href={'https://medium.com/@wladimir.pasquel/'}>
-              <FaMedium className="w-8 h-8 hover:bg-sky-900 hover:text-white dark:hover:text-black dark:hover:bg-white"/>
+              <FaMedium className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
             <Link href={'https://github.com/lordksix/'}>
-              <FaGithub className="w-8 h-8 hover:bg-sky-900 hover:text-white dark:hover:text-black dark:hover:bg-white"/>
+              <FaGithub className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
             <Link href={'https://wellfound.com/u/wpasquel/'}>
-              <FaAngellist className="w-8 h-8 hover:bg-sky-900 hover:text-white dark:hover:text-black dark:hover:bg-white"/>
+              <FaAngellist className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
           </div>
         </div>
