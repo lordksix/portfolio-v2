@@ -1,13 +1,13 @@
-import Footer from "@/components/home/footer/footer";
-import AccordionDemo from "@/components/shared/accordion";
-import Tooltip from "@/components/shared/tooltip";
+import Footer from '@/components/home/footer/footer';
+import AccordionDemo from '@/components/shared/accordion';
+import Tooltipsimple from '@/components/shared/tooltipsimple';
 import { useTranslations } from 'next-intl';
 import { FaJava } from 'react-icons/fa6';
 import {
   SiTypescript, SiPython, SiJavascript, SiPhp, SiRuby, SiPostgresql, SiMongodb,
   SiHtml5, SiCss3, SiDjango, SiReact, SiVite, SiNextdotjs, SiBootstrap, SiTailwindcss,
   SiRubyonrails, SiNodedotjs, SiGit, SiGithub, SiWebpack, SiJest, SiMocha, SiLinux,
-} from "react-icons/si";
+} from 'react-icons/si';
 import { getTranslator } from 'next-intl/server';
 
 export async function generateMetadata({params: { locale }}: {params: { locale: string }}) {
@@ -29,38 +29,38 @@ const AboutPage = () => {
   const t = useTranslations('About');
   const languages = (
     <div className="flex flex-wrap gap-2">
-      <Tooltip content="TypeScript"><SiTypescript className="w-8 h-8"/></Tooltip>
-      <Tooltip content="JavaScript"><SiJavascript className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Python."><SiPython className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Java"><FaJava className="w-8 h-8"/></Tooltip>
-      <Tooltip content="PHP"><SiPhp className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Ruby"><SiRuby className="w-8 h-8"/></Tooltip>
-      <Tooltip content="PostgreSQL"><SiPostgresql className="w-8 h-8"/></Tooltip>
-      <Tooltip content="MongoDB"><SiMongodb className="w-8 h-8"/></Tooltip>
-      <Tooltip content="HTML5"><SiHtml5 className="w-8 h-8"/></Tooltip>
-      <Tooltip content="CSS3"><SiCss3 className="w-8 h-8"/></Tooltip>
+      <Tooltipsimple content="TypeScript"><SiTypescript className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="JavaScript"><SiJavascript className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Python."><SiPython className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Java"><FaJava className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="PHP"><SiPhp className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Ruby"><SiRuby className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="PostgreSQL"><SiPostgresql className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="MongoDB"><SiMongodb className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="HTML5"><SiHtml5 className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="CSS3"><SiCss3 className="w-8 h-8"/></Tooltipsimple>
     </div>
   );
   const frameworks = (
     <div className="flex flex-wrap gap-2">
-      <Tooltip content="Django"><SiDjango className="w-8 h-8"/></Tooltip>
-      <Tooltip content="React"><SiReact className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Vite"><SiVite className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Next.JS"><SiNextdotjs className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Bootstrap"><SiBootstrap className="w-8 h-8"/></Tooltip>
-      <Tooltip content="TailwindCSS"><SiTailwindcss className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Ruby on Rails"><SiRubyonrails className="w-8 h-8"/></Tooltip>
+      <Tooltipsimple content="Django"><SiDjango className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="React"><SiReact className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Vite"><SiVite className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Next.JS"><SiNextdotjs className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Bootstrap"><SiBootstrap className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="TailwindCSS"><SiTailwindcss className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Ruby on Rails"><SiRubyonrails className="w-8 h-8"/></Tooltipsimple>
     </div>
   );
   const skills = (
     <div className="flex flex-wrap gap-2">
-      <Tooltip content="NodeJS"><SiNodedotjs className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Git"><SiGit className="w-8 h-8"/></Tooltip>
-      <Tooltip content="GitHub"><SiGithub className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Webpack"><SiWebpack className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Jest"><SiJest className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Mocha"><SiMocha className="w-8 h-8"/></Tooltip>
-      <Tooltip content="Linux"><SiLinux className="w-8 h-8"/></Tooltip>
+      <Tooltipsimple content="NodeJS"><SiNodedotjs className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Git"><SiGit className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="GitHub"><SiGithub className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Webpack"><SiWebpack className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Jest"><SiJest className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Mocha"><SiMocha className="w-8 h-8"/></Tooltipsimple>
+      <Tooltipsimple content="Linux"><SiLinux className="w-8 h-8"/></Tooltipsimple>
     </div>
   );
   const items: AccordionData[] = [
