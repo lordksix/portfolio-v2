@@ -23,9 +23,11 @@ type ContactFormLabel = {
 }
 
 type projectData = {
+  id?: string,
   nameEN: string,
   nameES: string,
-  stared: boolean,
+  starred: boolean,
+  shown: boolean,
   descriptionEN: string,
   descriptionES: string,
   url: string[],
