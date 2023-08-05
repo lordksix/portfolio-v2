@@ -2,7 +2,7 @@ import clientPromise from '@/lib/db/mongodb';
 import { ObjectId } from 'mongodb';
 import { NextRequest, NextResponse } from 'next/server';
 
-export async function PUT(req: NextRequest) {
+export async function DELETE(req: NextRequest) {
   try {
     const secret = req.nextUrl.searchParams.get('secret');
     const id = req.nextUrl.searchParams.get('id');
