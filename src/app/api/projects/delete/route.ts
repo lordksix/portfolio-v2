@@ -6,7 +6,7 @@ export async function DELETE(req: NextRequest) {
   try {
     const secret = req.nextUrl.searchParams.get('secret');
     const id = req.nextUrl.searchParams.get('id');
-    if(!id || !secret) throw new Error('Invalid token');
+    if(!id || !secret) throw new Error('Missing minim params');
     if (secret !== process.env.MY_SECRET_TOKEN) {
       return new NextResponse(JSON.stringify({ message: 'Invalid Token' }), {
           status: 401,

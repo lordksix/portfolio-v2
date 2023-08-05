@@ -5,7 +5,7 @@ export async function GET(req: NextRequest) {
   try {
     const secret = req.nextUrl.searchParams.get('secret');
     const name = req.nextUrl.searchParams.get('name');
-    if(!secret) throw new Error('Invalid token');
+    if(!name || !secret ) throw new Error('Missing minim params');
     if (secret !== process.env.MY_SECRET_TOKEN) {
       return new NextResponse(JSON.stringify({ message: 'Invalid Token' }), {
           status: 401,
@@ -15,19 +15,15 @@ export async function GET(req: NextRequest) {
           }
       })
     }
-    const dataJson = (await req.json()) as projectData;
     const client = await clientPromise;
     const projectsCollection = client.db(process.env.DB_NAME).collection(process.env.MONGO_PROJECTS_COLLECTION as string);
     const projectDocument = projectsCollection.find({ $or: [{ nameEN: name }, { nameES: name }] });
-    if (projectDocument) throw new Error('Project already exists');
-    const project = await projectsCollection.insertOne({
-      ...dataJson
-    });
+    if (!projectDocument) throw new Error('Project does not exist');
 
     return new NextResponse(
       JSON.stringify({
         status: "success",
-        data: { project },
+        data: { ...projectDocument },
       }),
       {
         status: 201,
@@ -35,7 +31,7 @@ export async function GET(req: NextRequest) {
       }
     );
   } catch (error: any) {
-    return new NextResponse(JSON.stringify({ message: 'Invalid Token' }), {
+    return new NextResponse(JSON.stringify({ message: error.message }), {
       status: 400,
       statusText: 'Invalid Request',
       headers: {
