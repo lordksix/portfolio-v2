@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(req: NextRequest) {
   try {
     const secret = req.nextUrl.searchParams.get('secret');
-    if(!secret) throw new Error('Invalid token');
+    if(!secret) throw new Error('Missing minim params');
     if (secret !== process.env.MY_SECRET_TOKEN) {
       return new NextResponse(JSON.stringify({ message: 'Invalid Token' }), {
           status: 401,
@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     const client = await clientPromise;
     const projectsCollection = client.db(process.env.DB_NAME).collection(process.env.MONGO_PROJECTS_COLLECTION as string);
     const projectDocument = await projectsCollection.findOne({$or: [{ nameEN },{ nameES }]});
-    if (projectDocument) throw new Error('Project already exists');
+    if (projectDocument) throw new Error('Project already exists, pleae update');
     const project = await projectsCollection.insertOne({
       ...dataJson
     });
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
       }
     );
   } catch (error: any) {
-    return new NextResponse(JSON.stringify({ message: 'Invalid Token' }), {
+    return new NextResponse(JSON.stringify({ message: error.message }), {
       status: 400,
       statusText: 'Invalid Request',
       headers: {
