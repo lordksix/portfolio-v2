@@ -46,7 +46,5 @@ export async function PUT(req: NextRequest) {
           'Content-Type': 'application/json'
       }
     })
-  } finally {
-    (await clientPromise).close();
   }
 }

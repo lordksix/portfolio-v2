@@ -38,7 +38,5 @@ export async function GET(req: NextRequest) {
           'Content-Type': 'application/json'
       }
     })
-  } finally {
-    (await clientPromise).close();
   }
 }
