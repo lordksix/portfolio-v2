@@ -40,7 +40,5 @@ export async function DELETE(req: NextRequest) {
           'Content-Type': 'application/json'
       }
     })
-  } finally {
-    (await clientPromise).close();
   }
 }
