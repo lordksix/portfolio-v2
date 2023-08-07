@@ -25,10 +25,10 @@ export async function DELETE(req: NextRequest) {
     return new NextResponse(
       JSON.stringify({
         status: "success",
-        data: { project: { ...projectDocument } },
+        data: projectDocument,
       }),
       {
-        status: 201,
+        status: 200,
         headers: { "Content-Type": "application/json" },
       }
     );
