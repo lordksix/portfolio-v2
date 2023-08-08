@@ -28,6 +28,8 @@ type projectData = {
   nameES: string,
   starred: boolean,
   shown: boolean,
+  language: string,
+  framework: string,
   descriptionEN: string,
   descriptionES: string,
   url: string[],

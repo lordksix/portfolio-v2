@@ -4,8 +4,10 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function GET(req: NextRequest) {
   try {
     const secret = req.nextUrl.searchParams.get('secret');
-    const name = req.nextUrl.searchParams.get('name');
+    let name = req.nextUrl.searchParams.get('name');
     if(!name || !secret ) throw new Error('Missing minim params');
+    name = name.replace('_', ' ');
+    console.log(name)
     if (secret !== process.env.MY_SECRET_TOKEN) {
       return new NextResponse(JSON.stringify({ message: 'Invalid Token' }), {
           status: 401,
@@ -17,16 +19,18 @@ export async function GET(req: NextRequest) {
     }
     const client = await clientPromise;
     const projectsCollection = client.db(process.env.DB_NAME).collection(process.env.MONGO_PROJECTS_COLLECTION as string);
-    const projectDocument = projectsCollection.find({ $or: [{ nameEN: name }, { nameES: name }] });
+    const query = { $or: [{ nameEN: name }, { nameES: name }] };
+    console.log(query)
+    const projectDocument = await projectsCollection.findOne(query);
     if (!projectDocument) throw new Error('Project does not exist');
 
     return new NextResponse(
       JSON.stringify({
         status: "success",
-        data: { ...projectDocument },
+        data: projectDocument ,
       }),
       {
-        status: 201,
+        status: 200,
         headers: { "Content-Type": "application/json" },
       }
     );

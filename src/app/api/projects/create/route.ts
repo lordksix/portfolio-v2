@@ -18,7 +18,8 @@ export async function POST(req: NextRequest) {
     const { nameEN, nameES } = dataJson;
     const client = await clientPromise;
     const projectsCollection = client.db(process.env.DB_NAME).collection(process.env.MONGO_PROJECTS_COLLECTION as string);
-    const projectDocument = await projectsCollection.findOne({$or: [{ nameEN },{ nameES }]});
+    const query = {$or: [{ nameEN },{ nameES }]};
+    const projectDocument = await projectsCollection.findOne(query);
     if (projectDocument) throw new Error('Project already exists, pleae update');
     const project = await projectsCollection.insertOne({
       ...dataJson
@@ -27,7 +28,7 @@ export async function POST(req: NextRequest) {
     return new NextResponse(
       JSON.stringify({
         status: "success",
-        data: { project},
+        data: project,
       }),
       {
         status: 201,
