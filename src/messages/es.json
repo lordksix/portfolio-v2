@@ -5,13 +5,18 @@
     "subtitle": "también conocido como",
     "descrip1": "Soy un desarrollador de software! Yo puedo ayudar a construir tu próximo producto, característica o aplicación web. Explora algunos de mis trabajos y proyectos!",
     "descrip2": "Si te gusta lo que vez y tienes algún projecto que necesitas ser creado, no dudes en contactarme.",
-    "conect": "Connectemos"
+    "connect": "Connectemos"
   },
   "About": {
     "title": "acerca de lordksix",
     "subtitle": "Desarrollador de software Full-stack",
-    "descrip1": "Soy un desarrollador de software! Amante de Python con experiencia con Django. Experiencia en Java. Codifico diariamente en Typescript. Experto en Ruby.",
+    "descrip1": "Soy un desarrollador de software full stack con experiencia en TypeScript, NextJS, NestJS, Ruby, Python, Django, PHP, y más",
+    "descrip1_1": "Tengo una gran pasión para cread aplicaciones eficientes y escalables que dar una excelente experiencia al usuario y entrenar desarrolladores jr.",
+    "descrip1_2": " Tengo un gran orgullo cuando veo que el producto final del proyecto funciona como tiene que ser, o cuando un miembre de mi equipo o un desarrollador jr ha superado obstáculos.",
+    "fun_fact": "En mi tiempo libre, me encanta leer novelas históricas, correr, revisar y mejorar mis código más antiguos, diseñar máquinas, y conocer gente nueva.",
     "descrip2": "Si te gusta lo que vez y tienes algún projecto que necesitas ser creado, no dudes en contactarme.",
+    "connect": "Connectemos",
+    "call_action": "Agendemos una llamada por Zoom!",
     "language": "Lenguajes",
     "framework": "Frameworks",
     "skill": "Habilidades"
@@ -36,7 +41,8 @@
     "liveDemo": "Demostración",
     "github": "Repositorio",
     "techStack": "Tecnologías",
-    "techtag": "techtagES"
+    "techtag": "techtagES",
+    "extra_projects": "Extra categorias se agregaran."
   },
   "MetadataHome": {
     "title": "Lordkisx Portafolio",
