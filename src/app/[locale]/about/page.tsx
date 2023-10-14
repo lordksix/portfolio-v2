@@ -110,6 +110,8 @@ const AboutPage = () => {
           <br />
           <p>{t('descrip1_2')}</p>
           <br />
+          <p>{t('fun_fact')}</p>
+          <br />
           <p>{t('descrip2')}</p>
           <br />
           <p>{t('call_action')}</p>
