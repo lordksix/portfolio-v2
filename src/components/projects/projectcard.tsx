@@ -27,7 +27,7 @@ const ProjectCard = ({ data }: Props) => {
       <div className="w-8/12 my-6 animate-fade-in md:w-9/12 lg:w-8/12">
         <h3 className='font-bold'>{t('extra')}</h3>
         <div>
-            <p>Proyectos</p>
+            <p>{t('extra_projects')}</p>
         </div>
       </div>
     </>

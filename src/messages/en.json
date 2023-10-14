@@ -5,13 +5,17 @@
     "subtitle": "also known as",
     "descrip1": "I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience!",
     "descrip2": "If you like what you see and have a project you need coded, don't hesitate to contact me.",
-    "conect": "Let's connect"
+    "connect": "Let's connect"
   },
   "About": {
     "title": "about lordksix",
-    "subtitle": "Full-stack software developer",
-    "descrip1": "I'm a software developer! Python lover with Django experience. Java strong. Typescript daily coder. Ruby expert.",
+    "subtitle": "Full Stack software developer",
+    "descrip1": "I am a full stack developer with experience with TypeScript, NextJS, NestJS, Ruby, Python, Django, PHP, and more.",
+    "descrip1_1": "I have a great passion for creating end-to-end, scalable, and efficient applications that provide an optimal user experience and mentoring junior developers.",
+    "descrip1_2": "I take great pride when I see a project's final product work as intended or whenever a team member or junior developer has overcome obstacles or blockers. ",
+    "fun_fact": "In my free time, I love to read historic novels, run, check, and improve old code, design new machines, and meet new people.",
     "descrip2": "If you like what you see and have a project you need coded, don't hesitate to contact me.",
+    "call_action": "Let's schedule a Zoom chat!",
     "language": "Languages",
     "framework": "Frameworks",
     "skill": "Skills"
@@ -23,7 +27,7 @@
     "email": "E-mail",
     "message": "Message",
     "reset": "Reset",
-    "confirmed": "Thanks for cotnacting me!",
+    "confirmed": "Thanks for contacting me!",
     "submit": "Get in touch"
   },
   "Projects": {
@@ -36,7 +40,8 @@
     "liveDemo": "Live Demo",
     "github": "GitHub Repo",
     "techStack": "Tech-Stack",
-    "techtag": "techtagEN"
+    "techtag": "techtagEN",
+    "extra_projects": "Extra categories to be added."
   },
   "MetadataHome": {
     "title": "Lordkisx Portfolio",

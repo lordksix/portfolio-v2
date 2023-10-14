@@ -106,7 +106,13 @@ const AboutPage = () => {
         <div className="flex flex-col justify-center text-center sm:text-start">
           <p>{t('descrip1')}</p>
           <br />
+          <p>{t('descrip1_1')}</p>
+          <br />
+          <p>{t('descrip1_2')}</p>
+          <br />
           <p>{t('descrip2')}</p>
+          <br />
+          <p>{t('call_action')}</p>
         </div>
         <div>
             <AccordionDemo accordionItems={items} />
