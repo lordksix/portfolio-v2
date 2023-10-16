@@ -25,9 +25,9 @@ export async function GET(req: Request, { params }: GetParams) {
     Key: `${process.env.AWS_BUCKET_FOLDER as string}/${filename}.pdf`,
   });
 
-  const response = await s3.send(command);
   // use fetch to get a response
-  console.log(response);
+  const response = await s3.send(command);
+
 
   // return a new response but use 'content-disposition' to suggest saving the file to the user's computer
   return new Response(response.Body?.transformToWebStream(), {
