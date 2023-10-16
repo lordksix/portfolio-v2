@@ -39,6 +39,10 @@ const AboutPage = () => {
       <div className="flex flex-col w-8/12 mx-auto my-8 md:w-11/12 lg:w-10/12 xl:w-8/12 gap-y-8 animate-fade-in md:grid md:grid-cols-2 md:gap-x-14 md:gap-y-0">
         <div className="flex flex-col justify-center text-center sm:text-start sm:text-xl sm:font-medium">
           <p>{t('description')}</p>
+          <br />
+          <p>{t('description_2')}</p>
+          <br />
+          <p>{t('call_action')}</p>
         </div>
         <div>
             <ContactForm
