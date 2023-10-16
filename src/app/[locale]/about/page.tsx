@@ -9,6 +9,7 @@ import {
   SiRubyonrails, SiNodedotjs, SiGit, SiGithub, SiWebpack, SiJest, SiMocha, SiLinux,
 } from 'react-icons/si';
 import { getTranslator } from 'next-intl/server';
+import Link from 'next/link';
 
 export async function generateMetadata({params: { locale }}: {params: { locale: string }}) {
   const t = await getTranslator(locale, 'MetadataAbout');
@@ -90,7 +91,7 @@ const AboutPage = () => {
     },
   ];
   return (
-    <main className="flex flex-col items-center justify-center w-screen min-h-screen pt-24 pb-10 overflow-hidden sm:pt-10">
+    <main className="flex flex-col items-center justify-center w-screen min-h-screen pt-24 pb-10 overflow-hidden sm:pt-16">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
         <h1 className="z-10 text-3xl text-transparent duration-1000 cursor-default bg-sky-700 dark:bg-white text-edge-outline animate-title font-display dark:text-edge-outline-dark sm:text-4xl md:text-5xl whitespace-nowrap bg-clip-text ">
           {t('title')}
@@ -113,6 +114,9 @@ const AboutPage = () => {
           <p>{t('fun_fact')}</p>
           <br />
           <p>{t('descrip2')}</p>
+          <br />
+          <p>{t('more_resume')}</p>
+          <Link href={`api/download/${t('name_resume')}`} className="hover:font-bold">{t('click_here')}</Link>
           <br />
           <p>{t('call_action')}</p>
         </div>

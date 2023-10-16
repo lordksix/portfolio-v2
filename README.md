@@ -67,6 +67,7 @@
 - **NextJS App**
 - **Productions deployed**
 - **Implement MongoDB**
+- **Connect AWS S3**
 - **Implement localization**
 - **Implement theme**
 
