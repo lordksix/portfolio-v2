@@ -1,7 +1,7 @@
 {
   "Home": {
     "welcome": "Bienvenido",
-    "title": "Soy Wladimir P.",
+    "title": "Soy Wladimir Pasquel",
     "subtitle": "también conocido como",
     "descrip1": "Soy un desarrollador de software! Yo puedo ayudar a construir tu próximo producto, característica o aplicación web. Explora algunos de mis trabajos y proyectos!",
     "descrip2": "Si te gusta lo que vez y tienes algún projecto que necesitas ser creado, no dudes en contactarme.",
@@ -17,6 +17,9 @@
     "descrip2": "Si te gusta lo que vez y tienes algún projecto que necesitas ser creado, no dudes en contactarme.",
     "connect": "Connectemos",
     "call_action": "Agendemos una llamada por Zoom!",
+    "more_resume": "Para más información, puede descargar mi CV",
+    "click_here": "Descargar CV",
+    "name_resume": "WladimirPasquelResume-es",
     "language": "Lenguajes",
     "framework": "Frameworks",
     "skill": "Habilidades"
@@ -24,6 +27,11 @@
   "Contact": {
     "title": "contáctame",
     "description": " Si tienes una aplicación que te gustaría desarrolla, una nueva característica que necesitas construir o un proyecto que necesita ser codificado, contáctame. Estaré encantado de ayudarte",
+    "description_2": "Yo soy el candidato perfecto para tu projecto. Contruyamos la mejor solución para TI",
+    "call_action": "Envíame los detalles de tu proyecto e información de contacto y agendemos una llamada por Zoom!",
+    "more_resume": "Para más información, puede descargar mi CV",
+    "click_here": "Descargar CV",
+    "name_resume": "WladimirPasquelResume-es",
     "name": "Nombre",
     "email": "E-mail",
     "message": "Mensaje",

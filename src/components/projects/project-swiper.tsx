@@ -33,7 +33,7 @@ const ProjectSwiper = ({ data }: Props) => {
           type: "spring",
           duration: 2,
         }}
-        className="relative z-20 flex w-full overflow-y-hidden overflow-y-scroll no-scrollbar snap-x snap-mandatory"
+        className="relative z-20 flex w-full overflow-y-scroll no-scrollbar snap-x snap-mandatory"
       >
         <Swiper
           slidesPerView={1}
@@ -49,7 +49,7 @@ const ProjectSwiper = ({ data }: Props) => {
           {data.map((item) => {
             return (
               <SwiperSlide key={uuidv4()}>
-                <div className="z-20 flex flex-col items-center justify-center flex-shrink-0 w-full h-full pt-5 pb-10 space-y-5 snap-center sm:justify-center md:pt-10 ">
+                <div className="z-20 flex flex-col items-center justify-around flex-shrink-0 w-full h-full snap-center">
                   <Image
                     src={item.snapshot}
                     priority={true}

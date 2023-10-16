@@ -1,7 +1,7 @@
 {
   "Home": {
     "welcome": "Welcome",
-    "title": "I am Wladimir P.",
+    "title": "I am Wladimir Pasquel",
     "subtitle": "also known as",
     "descrip1": "I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience!",
     "descrip2": "If you like what you see and have a project you need coded, don't hesitate to contact me.",
@@ -16,6 +16,9 @@
     "fun_fact": "In my free time, I love to read historic novels, run, check, and improve old code, design new machines, and meet new people.",
     "descrip2": "If you like what you see and have a project you need coded, don't hesitate to contact me.",
     "call_action": "Let's schedule a Zoom call!",
+    "more_resume": "For more information, please download my resume.",
+    "click_here": "Download resume",
+    "name_resume": "WladimirPasquelResume",
     "language": "Languages",
     "framework": "Frameworks",
     "skill": "Skills"
@@ -23,6 +26,11 @@
   "Contact": {
     "title": "contact me",
     "description": "If you have an application you are interested in developing, a feature that you need built or a project that needs coding, contact me. I'd love to help with it!",
+    "description_2": "I am the ideal candidate for your project. Let's build the best solution for YOU!",
+    "call_action": "Send me your project details and contact information and let's schedule a Zoom call!",
+    "more_resume": "For more information, please download my resume.",
+    "click_here": "Download resume",
+    "name_resume": "WladimirPasquelResume",
     "name": "Name",
     "email": "E-mail",
     "message": "Message",
