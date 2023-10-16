@@ -2,6 +2,7 @@ import ContactForm from '@/components/forms/ContactForm';
 import Footer from '@/components/home/footer/footer';
 import { useTranslations } from 'next-intl';
 import { getTranslator } from 'next-intl/server';
+import Link from 'next/link';
 
 export async function generateMetadata({params: { locale }}: {params: { locale: string }}) {
   const t = await getTranslator(locale, 'MetadataContact');
@@ -41,6 +42,9 @@ const AboutPage = () => {
           <p>{t('description')}</p>
           <br />
           <p>{t('description_2')}</p>
+          <br />
+          <p>{t('more_resume')}</p>
+          <Link href={`api/download/${t('name_resume')}`} className="hover:font-bold">{t('click_here')}</Link>
           <br />
           <p>{t('call_action')}</p>
         </div>
