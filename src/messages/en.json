@@ -23,6 +23,8 @@
   "Contact": {
     "title": "contact me",
     "description": "If you have an application you are interested in developing, a feature that you need built or a project that needs coding, contact me. I'd love to help with it!",
+    "description_2": "I am the ideal candidate for your project. Let's build the best solution for YOU!",
+    "call_action": "Send me your project details and contact information and let's schedule a Zoom call!",
     "name": "Name",
     "email": "E-mail",
     "message": "Message",

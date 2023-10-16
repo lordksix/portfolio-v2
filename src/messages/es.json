@@ -24,6 +24,8 @@
   "Contact": {
     "title": "contáctame",
     "description": " Si tienes una aplicación que te gustaría desarrolla, una nueva característica que necesitas construir o un proyecto que necesita ser codificado, contáctame. Estaré encantado de ayudarte",
+    "description_2": "Yo soy el candidato perfecto para tu projecto. Contruyamos la mejor solución para TI",
+    "call_action": "Envíame los detalles de tu proyecto e información de contacto y agendemos una llamada por Zoom!",
     "name": "Nombre",
     "email": "E-mail",
     "message": "Mensaje",
