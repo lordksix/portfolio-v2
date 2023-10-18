@@ -13,19 +13,19 @@ const Footer = () => {
         <div>
           <p className="text-sm sm:text-base">{t('connect')}</p>
           <div className="flex justify-start gap-2">
-            <Link href={'https://twitter.com/wapasquel'}>
+            <Link href={'https://twitter.com/wapasquel'} rel="noreferrer" target="_blank">
               <FaSquareTwitter className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
-            <Link href={'https://www.linkedin.com/in/wladpasquel/'}>
+            <Link href={'https://www.linkedin.com/in/wladpasquel/'} rel="noreferrer" target="_blank">
               <FaLinkedin className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
-            <Link href={'https://medium.com/@wladimir.pasquel/'}>
+            <Link href={'https://medium.com/@wladimir.pasquel/'} rel="noreferrer" target="_blank">
               <FaMedium className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
-            <Link href={'https://github.com/lordksix/'}>
+            <Link href={'https://github.com/lordksix/'} rel="noreferrer" target="_blank">
               <FaGithub className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
-            <Link href={'https://wellfound.com/u/wpasquel/'}>
+            <Link href={'https://wellfound.com/u/wpasquel/'} rel="noreferrer" target="_blank">
               <FaAngellist className="w-8 h-8 hover:bg-sky-900 hover:text-white active:scale-90 dark:hover:text-black dark:hover:bg-white"/>
             </Link>
           </div>
