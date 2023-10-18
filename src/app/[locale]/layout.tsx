@@ -8,7 +8,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { Providers } from '@/components/context/themeproviders';
 import {getTranslator} from 'next-intl/server';
 
-export async function generateMetadata({params: { locale }}: {params: { locale: string }}) {
+export async function generateMetadata({params: { locale = 'en' }}: {params: { locale: string }}) {
   const t = await getTranslator(locale, 'MetadataHome');
   if(!t) {
     return {

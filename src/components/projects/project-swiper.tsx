@@ -50,6 +50,7 @@ const ProjectSwiper = ({ data }: Props) => {
             return (
               <SwiperSlide key={uuidv4()}>
                 <div className="z-20 flex flex-col items-center justify-around flex-shrink-0 w-full h-full snap-center">
+                {item.name}
                   <Image
                     src={item.snapshot}
                     priority={true}
@@ -60,7 +61,6 @@ const ProjectSwiper = ({ data }: Props) => {
                     quality={100}
                   />
                   <div className="max-w-3xl px-6 space-y-10 text-center md:px-10">
-                    {item.name}
                     {item.description}
                     {item.techtag}
                     {item.url}
