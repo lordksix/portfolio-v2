@@ -5,6 +5,7 @@
     "subtitle": "also known as",
     "descrip1": "I'm a software developer! I can help you build a product, feature or website Look through some of my work and experience!",
     "descrip2": "If you like what you see and have a project you need coded, don't hesitate to contact me.",
+    "welcome2": "Glad to see you!",
     "connect": "Let's connect"
   },
   "About": {
@@ -70,7 +71,7 @@
   },
   "Navbar": {
     "about": "About",
-    "projects": "Projects",
+    "projects": "More Projects",
     "contact": "Contact"
   },
   "Common": {
