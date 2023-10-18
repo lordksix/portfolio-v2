@@ -18,7 +18,7 @@ const processBullet = (element: string[]) => {
       {element.map((elem) => (
         <span
           key={uuidv4()}
-          className="px-2 py-1 font-medium text-yellow-400 rounded bg-sky-900 hover:bg-sky-700 dark:bg-white dark:text-black dark:hover:bg-gray-300"
+          className="px-2 py-1 font-medium text-yellow-400 rounded bg-[#414ec7] hover:bg-sky-700 dark:bg-[#408f44] dark:text-black dark:hover:bg-gray-300"
         >
           {elem}
         </span>
@@ -57,12 +57,12 @@ const processData = (data: projectData[], name: string, description: string, tec
       </h4>
     );
     const elementDescrip: ReactNode = (
-      <p className="w-8/12 mx-auto text-justify cursor-default sm:w-11/12">
+      <p className="w-8/12 mx-auto text-justify cursor-default sm:w-11/12 font-medium">
         {dataElement[description as keyof projectData]}
       </p>
     );
     const elementTechTag: ReactNode = (
-      <div className="grid w-10/12 grid-cols-2 mx-auto text-sm text-justify cursor-default sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-2">
+      <div className="grid w-10/12 grid-cols-2 mx-auto text-sm text-justify cursor-pointer sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-2">
         {processBullet(dataElement[techtag as keyof projectData] as string[])}
       </div>
     );

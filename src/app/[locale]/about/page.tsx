@@ -93,7 +93,7 @@ const AboutPage = () => {
   return (
     <main className="flex flex-col items-center justify-center w-screen min-h-screen pt-24 pb-10 overflow-hidden sm:pt-16">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
-        <h1 className="z-10 text-3xl text-transparent duration-1000 cursor-default bg-sky-700 dark:bg-white text-edge-outline animate-title font-display dark:text-edge-outline-dark sm:text-4xl md:text-5xl whitespace-nowrap bg-clip-text ">
+        <h1 className="z-10 text-3xl text-transparent duration-1000 cursor-default bg-[#414ec7] dark:bg-[#408f44] text-edge-outline animate-title font-display dark:text-edge-outline-dark sm:text-4xl md:text-5xl whitespace-nowrap bg-clip-text ">
           {t('title')}
         </h1>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
@@ -104,18 +104,18 @@ const AboutPage = () => {
         </h2>
       </div>
       <div className="flex flex-col w-8/12 mx-auto my-8 gap-y-8 animate-fade-in sm:grid sm:grid-cols-2 sm:gap-x-14 sm:gap-y-0">
-        <div className="flex flex-col justify-center text-center sm:text-start">
+        <div className="flex flex-col justify-center text-center sm:text-start font-medium">
           <p>{t('descrip1')}</p>
           <br />
-          <p>{t('descrip1_1')}</p>
+          <p className="text-[#414ec7] dark:text-[#408f44]">{t('descrip1_1')}</p>
           <br />
           <p>{t('descrip1_2')}</p>
           <br />
-          <p>{t('fun_fact')}</p>
+          <p className="text-[#414ec7] dark:text-[#408f44]">{t('fun_fact')}</p>
           <br />
           <p>{t('descrip2')}</p>
           <br />
-          <p>{t('more_resume')}</p>
+          <p className="text-[#414ec7] dark:text-[#408f44]">{t('more_resume')}</p>
           <Link href={`api/download/${t('name_resume')}`} className="hover:font-bold">{t('click_here')}</Link>
           <br />
           <p>{t('call_action')}</p>
