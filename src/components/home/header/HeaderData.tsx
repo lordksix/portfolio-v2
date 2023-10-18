@@ -11,24 +11,19 @@ import LoadingData from '../../shared/loadingData';
 import { useRouter } from 'next/navigation';
 import { GoHomeFill } from 'react-icons/go';
 import DarkModeButton from '@/components/shared/themeselector';
-import { useTranslations } from 'next-intl';
 
 type Props = {
-  show: boolean
+  show: boolean,
+  links: {
+    path: string;
+    text: string;
+  }[],
 }
 
-const HeaderData = ({ show = false }: Props) => {
+const HeaderData = ({ show = false, links }: Props) => {
   const scrolled = useScroll(50);
   const router = useRouter();
   const { MenuModal, setShowMenuModal } = useMenuModal();
-
-  const n = useTranslations('Navbar');
-  const links = [
-    { text: n('about'), path: "/about" },
-    { text: n('projects'), path: "/projects" },
-    { text: n('contact'), path: "/contact" },
-  ];
-
   const returnBtn = (
     <button type="button" className="flex items-center justify-center hover:text-blue-500 active:scale-90" onClick={() => router.back()}  title="goback">
       <FaChevronLeft />
