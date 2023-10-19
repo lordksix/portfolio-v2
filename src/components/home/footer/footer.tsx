@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="w-10/12 py-4 animate-fade-in md:w-8/12">
       <div className="flex justify-between">
         <div>
-          <p className="text-sm sm:text-base font-bold text-[#414ec7] dark:text-[#408f44]">{t('connect')}</p>
+          <p className="text-sm sm:text-base font-black text-[#414ec7] dark:text-[#408f44]">{t('connect')}</p>
           <div className="flex justify-start gap-2 text-[#414ec7] dark:text-[#408f44]">
             <Link href={'https://twitter.com/wapasquel'} rel="noreferrer" target="_blank">
               <FaSquareTwitter className="w-8 h-8 hover:bg-sky-900 hover:text-white dark:bg-white active:scale-90 dark:hover:text-white dark:hover:bg-[#408f44]"/>
