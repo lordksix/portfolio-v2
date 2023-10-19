@@ -20,7 +20,7 @@ const Hero = () => {
             <Link
               key={item.path}
               href={item.path}
-              className="duration-500 sm:text-lg hover:underline font-bold hover:text-[#414ec7] dark:hover:text-[#408f44]"
+              className="duration-500 sm:text-lg hover:underline font-bold text-[#fb8500] dark:text-[#ffb703] hover:text-[#414ec7] dark:hover:text-[#408f44]"
             >
               {item.text}
             </Link>
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="my-2 text-center animate-fade-in">
         <h2>
           <p className="sm:text-lg text-[#414ec7] dark:text-[#408f44]">{t('welcome')}</p>
-          <p className="text-xl font-extrabold sm:text-2xl md:text-3xl">{t('title')}</p>
+          <p className="text-xl font-extrabold sm:text-2xl text-[#fb8500] md:text-3xl dark:text-[#ffb703]">{t('title')}</p>
           <p className="sm:text-lg text-[#414ec7] dark:text-[#408f44]">{t('subtitle')}</p>
         </h2>
       </div>
@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
-      <div className="w-10/12 text-base text-center sm:text-lg animate-fade-in max-w-4xl">
+      <div className="w-10/12 max-w-3xl text-base text-center sm:text-lg animate-fade-in text-[#d62828] dark:text-[#ffb703] font-semibold">
         <p>
           {t('descrip1')}
         </p>

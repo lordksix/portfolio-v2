@@ -93,18 +93,18 @@ const AboutPage = () => {
   return (
     <main className="flex flex-col items-center justify-center w-screen min-h-screen pt-24 pb-10 overflow-hidden sm:pt-16">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
-        <h1 className="z-10 text-3xl text-transparent duration-1000 cursor-default bg-[#414ec7] dark:bg-[#408f44] text-edge-outline animate-title font-display dark:text-edge-outline-dark sm:text-4xl md:text-5xl whitespace-nowrap bg-clip-text ">
+        <h1 className="z-10 text-4xl text-transparent duration-1000 cursor-default bg-[#414ec7] dark:bg-[#408f44] text-edge-outline animate-title font-display dark:text-edge-outline-dark sm:text-4xl md:text-5xl whitespace-nowrap bg-clip-text ">
           {t('title')}
         </h1>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
-      <div className="my-6 animate-fade-in">
+      <div className="my-6 animate-fade-in dark:text-[#ffb703]">
         <h2>
-          <p className="text-lg font-extrabold text-center sm:text-xl md:text-2xl ">Wladimir P.</p>
+          <p className="text-xl font-extrabold text-center sm:text-2xl md:text-3xl ">Wladimir P.</p>
           <p className="text-center sm:text-lg ">{t('subtitle')}</p>
         </h2>
       </div>
       <div className="flex flex-col w-8/12 mx-auto my-8 gap-y-8 animate-fade-in sm:grid sm:grid-cols-2 sm:gap-x-14 sm:gap-y-0">
-        <div className="flex flex-col justify-center text-center sm:text-start font-medium">
+        <div className="flex flex-col justify-center font-medium text-center sm:text-start">
           <p>{t('descrip1')}</p>
           <br />
           <p className="text-[#414ec7] dark:text-[#408f44]">{t('descrip1_1')}</p>
@@ -116,9 +116,9 @@ const AboutPage = () => {
           <p>{t('descrip2')}</p>
           <br />
           <p className="text-[#414ec7] dark:text-[#408f44]">{t('more_resume')}</p>
-          <Link href={`api/download/${t('name_resume')}`} className="hover:font-bold">{t('click_here')}</Link>
+          <Link href={`api/download/${t('name_resume')}`} className="hover:font-bold dark:text-[#ffb703]">{t('click_here')}</Link>
           <br />
-          <p>{t('call_action')}</p>
+          <p className="dark:text-[#ffb703]">{t('call_action')}</p>
         </div>
         <div>
             <AccordionDemo accordionItems={items} />

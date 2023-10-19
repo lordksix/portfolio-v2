@@ -18,7 +18,7 @@ const processBullet = (element: string[]) => {
       {element.map((elem) => (
         <span
           key={uuidv4()}
-          className="px-2 py-1 font-medium text-yellow-400 rounded bg-[#414ec7] hover:bg-sky-700 dark:bg-[#408f44] dark:text-black dark:hover:bg-gray-300"
+          className="px-2 py-1 font-medium text-yellow-400 rounded bg-[#414ec7] hover:bg-sky-700 dark:bg-[#408f44] dark:text-white dark:hover:bg-gray-300 dark:hover:text-[#408f44]"
         >
           {elem}
         </span>
@@ -57,7 +57,7 @@ const processData = (data: projectData[], name: string, description: string, tec
       </h4>
     );
     const elementDescrip: ReactNode = (
-      <p className="w-8/12 mx-auto text-justify cursor-default sm:w-11/12 font-medium">
+      <p className="w-8/12 mx-auto text-justify cursor-default sm:w-11/12 font-semibold text-[#fb8500] bg-gray-200/75 dark:bg-transparent dark:text-[#ffb703]">
         {dataElement[description as keyof projectData]}
       </p>
     );
