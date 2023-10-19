@@ -31,7 +31,7 @@ export default function ContactForm({
     <FormProvider {...methods}>
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-md p-4 mx-auto space-y-5 overflow-hidden text-white shadow-lg shadow-black/10 dark:shadow-white/30 bg-sky-700 rounded-2xl"
+        className="w-full max-w-md p-4 mx-auto space-y-5 overflow-hidden text-white shadow-lg shadow-black/60 dark:shadow-white/30 bg-sky-700 rounded-2xl"
       >
         <FormInput label={nameLabel} name="name" required={true} />
         <FormInput label={emailLabel} name="email" type="email" required={true} />
