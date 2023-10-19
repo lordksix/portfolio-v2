@@ -23,7 +23,7 @@ const FormTextArea: React.FC<FormTextArearops> = ({
       </label>
       <textarea
         id={name}
-        className="block w-full px-4 py-1 text-black bg-white appearance-none rounded-2xl focus:outline-none"
+        className="block w-full px-2 py-1 text-black bg-white rounded-lg appearance-none focus:outline-none"
         {...register(name, { required })}
         aria-invalid={errors[name] ? "true" : "false"}
       />
